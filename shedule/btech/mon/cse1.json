@@ -1,0 +1,17 @@
+[
+     {
+        "subject_name": "Computer Graphics",
+        "room_no": "A203",
+        "slot": "9:20 - 10:10"
+    },
+    {
+        "subject_name": "Operating System",
+        "room_no": "A202",
+        "slot": "10:10 - 11:00"
+    },
+    {
+        "subject_name": "Data Structure & Algorithms",
+        "room_no": "A212",
+        "slot": "11:00 - 12:40"
+    }
+]
