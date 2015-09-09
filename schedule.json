@@ -1,0 +1,119 @@
+{
+    "schedule":[
+     {
+        "subject_name": "Fundamentals of Computing (Mon) (CE-1-G1) (SS) ",
+        "room_no": "A-110",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Data Structure and Algorithm (M) (Mon) (CSE-1) (SB) ",
+        "room_no": "A-212",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Fundamentals Of Computing (Mon) (CSE-1-G1) (KS)",
+        "room_no": "A-110",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Object Oriented Programming (Mon) (CSE-5-G2) (KA) ",
+        "room_no": "A-212",
+        "slot": "2:05 - 3:35"
+    },
+    {
+        "subject_name": "Fundamentals Of Computing (Mon) (ME-1-G3) ( )",
+        "room_no": "A-110",
+        "slot": "2:50 - 4:20"
+    },
+    {
+        "subject_name": "Fundamentals of Computing (Tue) (BSC-1) (MPA) ",
+        "room_no": "A-110",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Numerical Methods (Tue) (CE-3-G1) ( ) ",
+        "room_no": "A-212",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Fundamentals of Computing (Tue) (CSE-1-G2) (KS) ",
+        "room_no": "A-110",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Numerical Methods (Tue) (ME-3-G1) ( ) ",
+        "room_no": "A-212",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Fundamentals of Computing (Wed) (EEE+ECE-1) (MPA) ",
+        "room_no": "A-110",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Fundamentals Of Computing (Wed) (CSE-1-G3) (KS)",
+        "room_no": "A-110",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Numerical Methods (Wed) (ME-3-G3) ( )",
+        "room_no": "A-212",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Numerical Methods (Wed) (ECE-3) ( ) ",
+        "room_no": "A-110",
+        "slot": "2:50 - 4:20"
+    },
+    {
+        "subject_name": "Data Structure and Algorithm (Wed) (CSE-3-G2) (SB) ",
+        "room_no": "A-212",
+        "slot": "2:50 - 4:20"
+    },
+    {
+        "subject_name": "Data Structure and Algorithm (Thr) (CSE-3-G1) (SB) ",
+        "room_no": "A-212",
+        "slot": "10:10 - 11:50"
+    },
+    {
+        "subject_name": "Fundamentals of Computing (Thr) (CE-1-G2) (SS) ",
+        "room_no": "A-110",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Fundamentals Of Computing (Thr) (ME-1-G2) ( )",
+        "room_no": "A-110",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Software Technology (M) (Thr) (CSE-1) ( ) ",
+        "room_no": "A-212",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Fundamentals of Computing (Fri) (CE-1-G3) ( ) ",
+        "room_no": "A-110",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Object Oriented Programming (Fri) (CSE-5-G1) (KA) ",
+        "room_no": "A-212",
+        "slot": "11:00 - 12:40"
+    },
+    {
+        "subject_name": "Fundamentals Of Computing (Fri) (ME-1-G1) ( )",
+        "room_no": "A-110",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Data Structure and Algorithm (Fri) (CSE-3-G3) ( )",
+        "room_no": "A-212",
+        "slot": "1:20 - 2:50"
+    },
+    {
+        "subject_name": "Programming in C (M) (Fri) (MSC) ( )",
+        "room_no": "A-212",
+        "slot": "2:50 - 4:20"
+    }
+]
+}

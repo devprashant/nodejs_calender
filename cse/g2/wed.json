@@ -1,0 +1,33 @@
+{
+    "schedule":[
+        {
+            "subject_name":"COMPUTER NETWORKS ",
+            "room_no": "B-203",
+            "slot" : "9:20 - 10:10"  },
+        {
+            "subject_name":"PROGRAMMING LANGUAGES",
+            "room_no": "B-203",
+            "slot" : "10:10-11:00" },
+        {
+            "subject_name":"DIGITAL ELECTRONICS",
+            "room_no": "B-203",
+            "slot" : "11:00-11:50" },
+        {
+            "subject_name":"DISCRETE STRUCTURE",
+            "room_no": "B-203",
+            "slot" : "11:50-12:40" },
+        {
+            "subject_name":"DIGITAL ELECTRONICS (T)",
+            "room_no": "A-213",
+            "slot" : "1:20-2:05 " },
+        {
+            "subject_name":"PROGRAMMING LANGUAGES",
+            "room_no": "B-203",
+            "slot" : "2:05-2:50" },
+        {
+            "subject_name":"DATA STRUCTURE AND ALGORITHMS LAB",
+            "room_no": "A-212",
+            "slot" : "2:50-4:20" }
+        ],
+    "day": "wednesday"
+}

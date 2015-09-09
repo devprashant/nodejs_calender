@@ -1,0 +1,21 @@
+{
+    "schedule":[
+        {
+            "subject_name":"DISCRETE STRUCTURE",
+            "room_no": "B-203",
+            "slot" : "9:20 - 10:10"},
+        {
+            "subject_name":"DATA STRUCTURE AND ALGORITHM LAB",
+            "room_no": "A-212",
+            "slot" : "10:10 - 11:50"},
+        {
+            "subject_name":"COMPUTER NETWORKS LAB",
+            "room_no": "A-212",
+            "slot" : "2:05 -3:35"},
+        {
+            "subject_name":"DATA STRUCTURE (T)",
+            "room_no": "B-213",
+            "slot" : "3:35 - 4:20"}
+        ],
+    "day": "thursday"
+}

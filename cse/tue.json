@@ -1,0 +1,22 @@
+{
+    "schedule":[
+        {
+            "subject_name":"DATA STRUCTURE AND ALGORITHM ",
+            "room_no": " B-203",
+            "slot" : "9:20 - 10:10 " },
+        {
+            "subject_name":"HUMAN VALUES ",
+            "room_no": " B-203",
+            "slot" : " 10:10 - 11:00" },
+        {
+            "subject_name":"COMPUTER NETWORKS ",
+            "room_no": " B-203",
+            "slot" : "11:00 - 11:50 " },
+        {
+            "subject_name":" ",
+            "room_no": "",
+            "slot" : " " }
+        
+        ],
+    "day": "tuesday"
+}
