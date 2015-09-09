@@ -6,6 +6,11 @@ var files = {};
 var port = process.env.PORT;
 var host = process.env.IP;
 
+//Convert time to Indian Standard Time
+var IST = new Date(); // Clone UTC Timestamp
+IST.setHours(IST.getHours() + 5); // set Hours to 5 hours later
+IST.setMinutes(IST.getMinutes() + 30); // set Minutes to be 30 minutes later
+
 var assets = function(req, res){
 var sendError = function(message, code){
     if(code === undefined)  {
@@ -50,7 +55,47 @@ var readFile = function(filePath){
     }
 }
 
-readFile(path.normalize(__dirname + req.url));
+var str = '/cse';
+var reqi = req.url;
+var joinedPath = str + reqi;
+console.log(joinedPath);
+
+var day = IST.getDay();
+//update day at 4:30 pm each day
+// for distributing next day schedule
+//console.log("day:", day);
+if (IST.getHours() > 16 && IST.getMinutes() > 30) {
+    day = day + 1;
+    if (day == 8) day = 1;
+}
+
+
+//console.log("day:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
+//console.log("server time: ", (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
+switch(day){
+    case 1:
+        readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
+        break;
+    case 2:
+        readFile(path.normalize(__dirname + joinedPath +'/tue.json'));
+        break;
+    case 3:
+        readFile(path.normalize(__dirname + joinedPath +'/wed.json'));
+        break;
+    case 4:
+        readFile(path.normalize(__dirname + joinedPath +'/thr.json'));
+        break;
+    case 5:
+        readFile(path.normalize(__dirname + joinedPath +'/fri.json'));
+        break;
+    case 6:
+        readFile(path.normalize(__dirname + joinedPath +'/sat.json'));
+        break;
+    case 7:
+        readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
+        break;
+}
+
 };
 
 
