@@ -6,12 +6,15 @@ var files = {};
 var port = process.env.PORT;
 var host = process.env.IP;
 
-//Convert time to Indian Standard Time
+
+
+var assets = function(req, res){
+    
+    //Convert time to Indian Standard Time
 var IST = new Date(); // Clone UTC Timestamp
 IST.setHours(IST.getHours() + 5); // set Hours to 5 hours later
 IST.setMinutes(IST.getMinutes() + 30); // set Minutes to be 30 minutes later
 
-var assets = function(req, res){
 var sendError = function(message, code){
     if(code === undefined)  {
         code = 404;
@@ -35,6 +38,13 @@ var serve = function(file){
     }
     res.writeHead(200, {'Content-Type': contentType});
     res.end(file.content);
+    /*
+    res.writeHead(200, {'Content-Type' : 'text/html'});
+    res.write("day:"+ day + "<br/>");
+    res.write("day:"+ IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes() + "<br>");
+    res.write("server time: "+ (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
+    res.end();*/
+    
 };
 
 var readFile = function(filePath){
@@ -63,15 +73,15 @@ console.log(joinedPath);
 var day = IST.getDay();
 //update day at 4:30 pm each day
 // for distributing next day schedule
-//console.log("day:", day);
+console.log("day:", day);
 if (IST.getHours() > 16 && IST.getMinutes() > 30) {
     day = day + 1;
     if (day == 8) day = 1;
 }
 
 
-//console.log("day:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
-//console.log("server time: ", (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
+console.log("day:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
+console.log("server time: ", (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
 switch(day){
     case 1:
         readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
