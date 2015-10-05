@@ -17,6 +17,12 @@
             "room_no": "B-203",
             "slot" : "11:50 - 12:40 "  },
         {
+            "subject_name":"PROGRAMMING LANGUAGES",
+            "room_no": " A-213 ",
+            "slot" : "1:20 - 2:05"     },
+            
+            
+        {
             "subject_name":"DIGITAL ELECTRONICS ",
             "room_no": "B-203",
             "slot" : "3:35 - 4:20"    }

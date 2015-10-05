@@ -17,7 +17,7 @@
             "room_no": "B-203",
             "slot" : "11:50 - 12:40 "  },
         {
-            "subject_name":"PROGRAMMING LANGUAGES (T) ",
+            "subject_name":"PROGRAMMING LANGUAGES",
             "room_no": " A-213 ",
             "slot" : "1:20 - 2:05"     },
         {
@@ -25,7 +25,7 @@
             "room_no": " A- 213",
             "slot" : "2:05 - 2:50"    },
         {
-            "subject_name":"DIGITAL ELECTRONICS (T)",
+            "subject_name":"DIGITAL ELECTRONICS ",
             "room_no": " A-213",
             "slot" : "2:50 - 3:35"    },
         {

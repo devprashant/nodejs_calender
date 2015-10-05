@@ -5,12 +5,9 @@ var path = require("path");
 var files = {};
 var port = process.env.PORT;
 var host = process.env.IP;
-
-
-
 var assets = function(req, res){
     
-    //Convert time to Indian Standard Time
+//Convert time to Indian Standard Time
 var IST = new Date(); // Clone UTC Timestamp
 IST.setHours(IST.getHours() + 5); // set Hours to 5 hours later
 IST.setMinutes(IST.getMinutes() + 30); // set Minutes to be 30 minutes later
@@ -76,11 +73,13 @@ var day = IST.getDay();
 console.log("day:", day);
 if (IST.getHours() > 16 && IST.getMinutes() > 30) {
     day = day + 1;
-    if (day == 8) day = 1;
+    if (day == 6) day = 1;
 }
 
+if (day == 0) day = day + 1;
 
-console.log("day:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
+console.log("day now for data processing:", day);
+console.log("IST Time:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
 console.log("server time: ", (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
 switch(day){
     case 1:
@@ -93,7 +92,7 @@ switch(day){
         readFile(path.normalize(__dirname + joinedPath +'/wed.json'));
         break;
     case 4:
-        readFile(path.normalize(__dirname + joinedPath +'/thr.json'));
+        readFile(path.normalize(__dirname + joinedPath +'/th.json'));
         break;
     case 5:
         readFile(path.normalize(__dirname + joinedPath +'/fri.json'));
@@ -103,6 +102,9 @@ switch(day){
         break;
     case 7:
         readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
+        break;
+    default:
+        //readFile(path.normalize(__dirname + '/cse/exam.json'));
         break;
 }
 

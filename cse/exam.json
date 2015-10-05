@@ -1,0 +1,29 @@
+{
+    "schedule":[
+        {
+            "subject_name":"DATA STRUCTURE AND ALGORITHM USING C",
+            "room_no": "12 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"},
+        {
+            "subject_name":"DISCRETE STRUCTURES",
+            "room_no": "14 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"},
+        {
+            "subject_name":"DIGITAL ELECTRONICS",
+            "room_no": "15 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"},
+        {
+            "subject_name":"HUMAN VALUES & PROFESSIONAL ETHICS",
+            "room_no": "16 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"},
+        {
+            "subject_name":"COMPUTER NETWORKS",
+            "room_no": "17 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"},
+        {
+            "subject_name":"PROGRAMMING LANGUAGES",
+            "room_no": "18 SEPTEMBER 2015",
+            "slot" : "11:30 - 1:00"}
+        ],
+    "day": "EXAM"
+}
