@@ -3,8 +3,8 @@ var fs = require("fs");
 var path = require("path");
 
 var files = {};
-var port = process.env.PORT;
-var host = process.env.IP;
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT;
+var host = process.env.IP || process.env.OPENSHIFT_NODEJS_IP;
 var assets = function(req, res){
     
 //Convert time to Indian Standard Time
