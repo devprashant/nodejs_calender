@@ -1,5 +1,5 @@
 {
-  "name": "nodejs calender",
+  "name": "nodejs_calender",
   "scripts": {
     "start": "node server.js"
   },
