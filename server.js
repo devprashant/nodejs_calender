@@ -71,12 +71,13 @@ var day = IST.getDay();
 //update day at 4:30 pm each day
 // for distributing next day schedule
 console.log("day:", day);
-if (IST.getHours() > 16 && IST.getMinutes() > 30) {
+if (IST.getHours() > 16 ) {
     day = day + 1;
-    if (day == 6) day = 1;
+    if (day == 7) day = 1;
+    console.log('processed day value:',day);
 }
 
-if (day == 0) day = day + 1;
+if (day == 0) day = 1;
 
 console.log("day now for data processing:", day);
 console.log("IST Time:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
