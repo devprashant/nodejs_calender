@@ -60,7 +60,7 @@ var readFile = function(filePath){
             serve(files[filePath]);
         });
     }
-}
+};
 
 var str = '/cse';
 var reqi = req.url;
@@ -68,7 +68,7 @@ var joinedPath = str + reqi;
 console.log(joinedPath);
 
 var day = IST.getDay();
-//update day at 4:30 pm each day
+//update day at 5 pm each day
 // for distributing next day schedule
 console.log("day:", day);
 if (IST.getHours() > 16 ) {
@@ -83,7 +83,7 @@ console.log("day now for data processing:", day);
 console.log("IST Time:", IST.getDay() + " " + IST.getHours() + " " + IST.getMinutes());
 console.log("server time: ", (new Date()).getDay() + " " + (new Date()).getHours() + " " + (new Date()).getMinutes());
 switch(day){
-    case 1:
+    /*case 1:
         readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
         break;
     case 2:
@@ -99,13 +99,13 @@ switch(day){
         readFile(path.normalize(__dirname + joinedPath +'/fri.json'));
         break;
     case 6:
-        readFile(path.normalize(__dirname + joinedPath +'/sat.json'));
+        readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
         break;
     case 7:
         readFile(path.normalize(__dirname + joinedPath +'/mon.json'));
-        break;
+        break;*/
     default:
-        //readFile(path.normalize(__dirname + '/cse/exam.json'));
+        readFile(path.normalize(__dirname + '/cse/thanks.json'));
         break;
 }
 
